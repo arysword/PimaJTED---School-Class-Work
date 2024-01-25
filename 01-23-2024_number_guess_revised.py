@@ -1,4 +1,4 @@
-# Balneo CSC 01/23/2024
+# Balneo CSC, Logan White, Nick Russell, Zachary Jenkins, Brody Villaman, Harry Barsiwal 01/23/2024
 # 01-23-2024_number_guess_revised.py
 # number guessing game
 # CC BY-NC-SA 4.0
@@ -46,7 +46,7 @@ def game(gm):
         print("The range of numbers is 1 to 100, you have 10 guesses")
         number = random.randint(1, 100)
         while guess != number and guesses <= 9:
-            guess = int(input(f"Choose a number between 1 and 1000.  "))
+            guess = int(input(f"Choose a number between 1 and 100.  "))
             guesses += 1
             if guess > number:
                 print("Too High, Guess again.\n\n")
