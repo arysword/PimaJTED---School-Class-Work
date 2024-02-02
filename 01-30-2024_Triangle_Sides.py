@@ -13,11 +13,11 @@ def choose():
     except:
         print("Please Enter 1,2, or 3 From the Above Options")
     if chosen == 1:
-        print(math.sqrt((int(input("Side a is: "))**2) + ((int(input("Side b is: ")))**2)))
+        print(math.sqrt((int(input("Side a is: ")) ** 2) + ((int(input("Side b is: "))) ** 2)))
     if chosen == 2:
-        print(math.sqrt((int(input("Side c is: "))**2) - ((int(input("Side a is: ")))**2)))
+        print(math.sqrt((int(input("Side c is: ")) ** 2) - ((int(input("Side a is: "))) ** 2)))
     if chosen == 3:
-        print(math.sqrt((int(input("Side c is: "))**2) - ((int(input("Side b is: ")))**2)))
+        print(math.sqrt((int(input("Side c is: ")) ** 2) - (int(input("Side b is: ")) ** 2)))
 
 
 # Code 
