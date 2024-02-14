@@ -7,18 +7,26 @@
 # Functions
 def prime_check(num):
     prime_check = False
-    if num == 1:
-        print(num, "is not a prime number")
-    elif num > 1:
+    if num > 1 :
         for i in range(2, num):
             if (num % i) == 0:
                 prime_check = True
                 break
-    if prime_check:
-        print(num, "is not a prime number")
     else:
-        print(num, "is a prime number")
+        prime_check = True
+    if not prime_check:
+        return num
+    else:
+        return False
 
 
+def main(length):
+    prime_list = []
+    for i in range(length):
+        if prime_check(i) != False:
+            prime_list.append(prime_check(i))
+    print(f'The list of all primes from 0 to {length - 1} is:')
+    print(prime_list)
+    
 # Code
-prime_check(input("What is your Number? \n ►"))
+main(int(input("What is your range of Numbers? \n ► ")) + 1)
